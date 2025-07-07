@@ -1,0 +1,18 @@
+threads
+produtores (1 a n)
+buffer (vetor / lista)
+consumidores (1 a n)
+
+gerenciador centralizado de caixas
+múltiplas threads
+
+uso de semáforo para gerenciar o espaço
+proteção por mutex
+/*
+O desafio principal é garantir que o produtor não tente adicionar
+dados a um buffer cheio e que o consumidor não tente retirar dados de um buffer vazio,
+evitando condições de corrida e inconsistências de dados.*/
+
+/*
+De forma a simplificar, o sistema já
+inicia com os três caixas conectados (devendo apenas criar suas threads),*/
